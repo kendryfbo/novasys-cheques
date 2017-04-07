@@ -16,7 +16,7 @@
             }
             .contenedor {
                 display:block;
-                width: 690px;
+                width: 680px;
                 height: 250px;
                 padding: 0px;
                 margin: 0px;
@@ -24,11 +24,11 @@
             .monto-1 {
                 position:relative;
                 top: -32px;
-                left: 530px;
+                left: 535px;
             }
             .fecha-1 {
                 position: relative;
-                left: 610px;
+                left: 605px;
                 top: -17px;
             }
             .monto-2 {
@@ -57,17 +57,17 @@
                 width:150px;
                 height:15px;
                 left:30px;
-                top: -138px;
+                top: -130px;
                 overflow: hidden;
             }
             .descripcion {
                 position: relative;
                 left:32px;
-                top: -138px;
+                top: -130px;
             }
             .portador {
                 position: relative;
-                left: 705px;
+                left: 695px;
                 top: -85px;
             }
             .orden-de {
@@ -88,8 +88,8 @@
                 <pre class="fecha-1">{{$cheque['dia']}}          {{$cheque['mes']}}          {{$cheque['año']}}</pre>
                 <p class="monto-2">{{$cheque['monto']}}</p>
                 <p class="nombre-1">{{$cheque['nombre']}}</p>
-                <p class="orden-de" hidden>------------</p>
-                <p class="portador">------------</p>
+                <p class="orden-de">--------------</p>
+                <p class="portador">--------------</p>
                 <p class="monto-letras">{{$cheque['montoLetras']}}</p>
                 <p class="fecha-2">{{$cheque['fecha']}}</p>
                 <p class="nombre-2">{{$cheque['nombre']}}</p>
