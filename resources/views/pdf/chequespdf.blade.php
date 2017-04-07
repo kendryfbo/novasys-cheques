@@ -16,7 +16,7 @@
             }
             .contenedor {
                 display:block;
-                width: 680px;
+                width: 660px;
                 height: 250px;
                 padding: 0px;
                 margin: 0px;
@@ -24,7 +24,7 @@
             .monto-1 {
                 position:relative;
                 top: -32px;
-                left: 535px;
+                left: 545px;
             }
             .fecha-1 {
                 position: relative;
@@ -50,24 +50,24 @@
             .fecha-2 {
                 position: relative;
                 left: 30px;
-                top: -138px;
+                top: -135px;
             }
             .nombre-2 {
                 position: relative;
                 width:150px;
                 height:15px;
                 left:30px;
-                top: -130px;
+                top: -120px;
                 overflow: hidden;
             }
             .descripcion {
                 position: relative;
                 left:32px;
-                top: -130px;
+                top: -120px;
             }
             .portador {
                 position: relative;
-                left: 695px;
+                left: 690px;
                 top: -85px;
             }
             .orden-de {
