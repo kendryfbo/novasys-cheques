@@ -18,66 +18,66 @@
                 font-size: 12px;
             }
             .contenedor {
-                display:block;
+                position: relative;
                 width: 750px;
-                height: 240px;
+                height: 210,5px;
                 padding: 0px;
                 margin: 0px;
                 border: 0px;
             }
             .monto-1 {
-                position:relative;
-                top: -33px;
-                left: 541px;
+                position:absolute;
+                top: -30px;
+                left: 580px;
             }
             .fecha-1 {
-                position: relative;
+                position: absolute;
                 left: 601px;
                 top: -17px;
             }
             .monto-2 {
-                position: relative;
+                position: absolute;
                 left: 30px;
-                top: -24px;
+                top: 0px;
             }
             .nombre-1 {
-                position: relative;
+                position:absolute;
                 left: 270px;
-                top: -50px;
+                top: 0px;
             }
             .monto-letras {
-                position:relative;
-                top: -105px;
+                position:absolute;
+                top: 20px;
                 left: 270px;
                 width: 350px;
             }
             .fecha-2 {
-                position: relative;
+                position: absolute;
                 left: 30px;
-                top: -135px;
+                top: 20px;
             }
             .nombre-2 {
-                position: relative;
+                position: absolute;
                 width:150px;
                 height:15px;
                 left:30px;
-                top: -120px;
+                top: 40px;
                 overflow: hidden;
             }
             .descripcion {
-                position: relative;
+                position: absolute;
                 left:32px;
-                top: -120px;
+                top: 60px;
             }
             .portador {
-                position: relative;
+                position: absolute;
                 left: 690px;
-                top: -84.5px;
+                top: 0px;
             }
             .orden-de {
-                position: relative;
+                position: absolute;
                 left: 205px;
-                top: -74px;
+                top: 0px;
             }
             .cruzado {
 

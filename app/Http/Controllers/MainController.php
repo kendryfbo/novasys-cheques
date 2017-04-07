@@ -26,7 +26,7 @@ class MainController extends Controller
 
             } else {
 
-                $pdf = PDF::Loadview('pdf.chequespdf',['cheques' => $data]);
+                $pdf = PDF::Loadview('pdf.formato2',['cheques' => $data]);
                 return $pdf->stream();
 
             }
