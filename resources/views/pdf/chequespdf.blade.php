@@ -16,7 +16,7 @@
             }
             .contenedor {
                 display:block;
-                width: 700px;
+                width: 690px;
                 height: 250px;
                 padding: 0px;
                 margin: 0px;
@@ -24,11 +24,11 @@
             .monto-1 {
                 position:relative;
                 top: -32px;
-                left: 515px;
+                left: 530px;
             }
             .fecha-1 {
                 position: relative;
-                left: 590px;
+                left: 610px;
                 top: -17px;
             }
             .monto-2 {
@@ -43,36 +43,36 @@
             }
             .monto-letras {
                 position:relative;
-                top: -100px;
+                top: -105px;
                 left: 270px;
                 width: 350px;
             }
             .fecha-2 {
                 position: relative;
                 left: 30px;
-                top: -72px;
+                top: -138px;
             }
             .nombre-2 {
                 position: relative;
                 width:150px;
                 height:15px;
                 left:30px;
-                top: -62px;
+                top: -138px;
                 overflow: hidden;
             }
             .descripcion {
                 position: relative;
                 left:32px;
-                top: -55px;
+                top: -138px;
             }
             .portador {
                 position: relative;
-                left: 715px;
-                top: -90px;
+                left: 705px;
+                top: -85px;
             }
             .orden-de {
                 position: relative;
-                left: 220px;
+                left: 205px;
                 top: -75px;
             }
             .cruzado {
