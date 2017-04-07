@@ -3,9 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use NumeroALetras;
 use Illuminate\Support\Facades\Input;
-use Excel;
+use PDF;
+use App\models\Cheque;
+
 class MainController extends Controller
 {
     function index(){
@@ -14,18 +15,32 @@ class MainController extends Controller
 
     function chequesPdf(Request $request){
 
+        if ($request->hasFile('file')){
 
-      if ($request->hasFile('file')){
-        $file = $request->file('file');
-        Excel::load($file, function($reader){
-          $archivo = $reader->get();
-          dd($archivo->first());
-        });
-      } else {
-        dd("Don`t have File");
-      }
+            $file = $request->file('file');
+            $data = Cheque::excelToCheques($file);
 
+            if (isset($data['error'])){
 
+                return view('pdf.errorexcel',['errores' => $data['msgErrores']]);
+
+            } else {
+
+                $pdf = PDF::Loadview('pdf.chequespdf',['cheques' => $data]);
+                return $pdf->stream();
+
+            }
+
+        } else {
+
+        dd("No has cargado ningun Archivo.");
+
+        }
+    }
+
+    function downloadDemo() {
+        //dd("Descargando demo");
+        return response()->download(public_path('/excel/file.xls'));
     }
 /*
     function parseExcel() {

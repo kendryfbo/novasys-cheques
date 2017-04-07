@@ -18,5 +18,15 @@
         <input class="form-control btn btn-primary" type="submit" name="submit" value="Generar Cheques">
       </div>
     </form>
+    <div class="panel">
+        <form class="container form-inline" action={{url('download-demo')}} method="get">
+            <div class="form-group">
+                <h3>Descargar archivo modelo...</h3>
+            </div>
+            <button type="submit" class="btn btn-info form-control" name="button">Descargar</button>
+            
+        </form>
+        <br>
+    </div>
   </div>
 @endsection

@@ -15,6 +15,9 @@ Route::get('/','MainController@index');
 
 Route::post('cheques', 'MainController@chequesPdf');
 
+Route::get('download-demo', 'MainController@downloadDemo');
+
+
 Route::get('pdf', function(){
 
   Excel::load('excel/file.xls', function($reader){
