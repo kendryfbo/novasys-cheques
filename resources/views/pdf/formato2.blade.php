@@ -22,62 +22,62 @@
                 width: 750px;
                 height: 210,5px;
                 padding: 0px;
-                margin: 0px;
+                margin-bottom: 100px;
                 border: 0px;
             }
             .monto-1 {
                 position:absolute;
-                top: -30px;
-                left: 570px;
+                top: -35px;
+                left: 520px;
             }
             .fecha-1 {
                 position: absolute;
-                left: 597px;
-                top: -15px;
+                left: 590px;
+                top: -5px;
             }
             .monto-2 {
                 position: absolute;
-                left: 10px;
-                top: 22px;
+                left: 5px;
+                top: 30px;
             }
             .nombre-1 {
                 position:absolute;
-                left: 260px;
-                top: 10px;
+                left: 250px;
+                top: 25px;
             }
             .monto-letras {
                 position:absolute;
-                top: 40px;
-                left: 260px;
+                top: 45px;
+                left: 250px;
                 width: 350px;
             }
             .fecha-2 {
                 position: absolute;
-                left: 10px;
-                top: 44px;
+                left: 5px;
+                top: 70px;
             }
             .nombre-2 {
                 position: absolute;
                 width:150px;
                 height:15px;
-                left:10px;
-                top: 66px;
+                left:5px;
+                top: 105px;
                 overflow: hidden;
             }
             .descripcion {
                 position: absolute;
-                left:10px;
-                top: 88px;
+                left:5px;
+                top: 140px;
             }
             .portador {
                 position: absolute;
-                left: 680px;
-                top: 20px;
+                left: 675px;
+                top: 36px;
             }
             .orden-de {
                 position: absolute;
-                left: 200px;
-                top: 12px;
+                left: 185px;
+                top: 24px;
             }
             .cruzado {
 
