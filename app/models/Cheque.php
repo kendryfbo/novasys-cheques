@@ -53,35 +53,35 @@ class Cheque extends Model
         }
         if (!isset($datos['fecha'])) {
             self::$error = true;
-            self::$msgErrores[] = 'ERROR Fila #'.$datos['fila'].' Colunma fecha';
+            self::$msgErrores[] = 'ERROR Fila #'.$datos['fila'].' columna fecha';
         }
         if (!isset($datos['monto'])) {
             self::$error = true;
-            self::$msgErrores[] = 'ERROR Fila #'.$datos['fila'].' Colunma monto';
+            self::$msgErrores[] = 'ERROR Fila #'.$datos['fila'].' columna monto';
         }
         if (!isset($datos['descripcion'])) {
             self::$error = true;
-            self::$msgErrores[] = 'ERROR Fila #'.$datos['fila'].' Colunma descripcion';
+            self::$msgErrores[] = 'ERROR Fila #'.$datos['fila'].' columna descripcion';
         }
         if (!isset($datos['tipo'])) {
             self::$error = true;
-            self::$msgErrores[] = 'ERROR Fila #'.$datos['fila'].' Colunma tipo';
+            self::$msgErrores[] = 'ERROR Fila #'.$datos['fila'].' columna tipo';
         }
         if (!isset($datos['montoLetras'])) {
             self::$error = true;
-            self::$msgErrores[] = 'ERROR Fila #'.$datos['fila'].' Colunma montoLetras';
+            self::$msgErrores[] = 'ERROR Fila #'.$datos['fila'].' columna montoLetras';
         }
         if (!isset($datos['dia'])) {
             self::$error = true;
-            self::$msgErrores[] = 'ERROR Fila #'.$datos['fila'].' Colunma dia';
+            self::$msgErrores[] = 'ERROR Fila #'.$datos['fila'].' columna dia';
         }
         if (!isset($datos['mes'])) {
             self::$error = true;
-            self::$msgErrores[] = 'ERROR Fila #'.$datos['fila'].' Colunma mes';
+            self::$msgErrores[] = 'ERROR Fila #'.$datos['fila'].' columna mes';
         }
         if (!isset($datos['año'])) {
             self::$error = true;
-            self::$msgErrores[] = 'ERROR Fila #'.$datos['fila'].' Colunma año';
+            self::$msgErrores[] = 'ERROR Fila #'.$datos['fila'].' columna año';
         }
     }
 

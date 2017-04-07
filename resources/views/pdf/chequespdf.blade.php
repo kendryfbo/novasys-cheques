@@ -10,6 +10,10 @@
                 font-size: 12px;
             }
 
+            pre {
+                font-family: sans-serif;
+                font-size: 12px;
+            }
             .contenedor {
                 display:block;
                 width: 700px;
@@ -19,44 +23,47 @@
             }
             .monto-1 {
                 position:relative;
-                top: -28px;
+                top: -30px;
                 left: 500px;
             }
             .fecha-1 {
                 position: relative;
-                left: 550px;
-                top: -15px;
+                left: 580px;
+                top: -17px;
             }
             .monto-2 {
                 position: relative;
-                left: 100px;
-                top: -20px;
+                left: 30px;
+                top: -25px;
             }
             .nombre-1 {
                 position: relative;
-                left: 260px;
-                top: -35px;
+                left: 270px;
+                top: -50px;
             }
             .monto-letras {
                 position:relative;
-                top: -40px;
-                left: 250px;
-                width: 300px;
+                top: -45px;
+                left: 270px;
+                width: 350px;
             }
             .fecha-2 {
                 position: relative;
-                left: 100px;
-                top: -10px;
+                left: 30px;
+                top: -70px;
             }
             .nombre-2 {
                 position: relative;
-                left:100px;
-                top: -10px;
+                width:150px;
+                height:15px;
+                left:30px;
+                top: -60px;
+                overflow: hidden;
             }
             .descripcion {
                 position: relative;
-                left:100px;
-                top: -20px;
+                left:30px;
+                top: -55px;
             }
         </style>
     </head>
@@ -65,7 +72,7 @@
         @foreach ($cheques as $cheque)
             <div class="contenedor">
                 <p class="monto-1">{{$cheque['monto']}}</p>
-                <p class="fecha-1">{{$cheque['dia']}} {{$cheque['mes']}} {{$cheque['año']}}</p>
+                <pre class="fecha-1">{{$cheque['dia']}}    {{$cheque['mes']}}    {{$cheque['año']}}</pre>
                 <p class="monto-2">{{$cheque['monto']}}</p>
                 <p class="nombre-1">{{$cheque['nombre']}}</p>
                 <p class="monto-letras">{{$cheque['montoLetras']}}</p>

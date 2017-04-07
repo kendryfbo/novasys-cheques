@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 
-@section('title','Importar Excel')
+@section('title','Sistema de Cheques')
 
 
 @section('content')
@@ -24,7 +24,7 @@
                 <h3>Descargar archivo modelo...</h3>
             </div>
             <button type="submit" class="btn btn-info form-control" name="button">Descargar</button>
-            
+
         </form>
         <br>
     </div>
