@@ -28,56 +28,56 @@
             .monto-1 {
                 position:absolute;
                 top: -30px;
-                left: 580px;
+                left: 570px;
             }
             .fecha-1 {
                 position: absolute;
-                left: 601px;
-                top: -17px;
+                left: 597px;
+                top: -15px;
             }
             .monto-2 {
                 position: absolute;
-                left: 30px;
-                top: 0px;
+                left: 10px;
+                top: 22px;
             }
             .nombre-1 {
                 position:absolute;
-                left: 270px;
-                top: 0px;
+                left: 260px;
+                top: 10px;
             }
             .monto-letras {
                 position:absolute;
-                top: 20px;
-                left: 270px;
+                top: 40px;
+                left: 260px;
                 width: 350px;
             }
             .fecha-2 {
                 position: absolute;
-                left: 30px;
-                top: 20px;
+                left: 10px;
+                top: 44px;
             }
             .nombre-2 {
                 position: absolute;
                 width:150px;
                 height:15px;
-                left:30px;
-                top: 40px;
+                left:10px;
+                top: 66px;
                 overflow: hidden;
             }
             .descripcion {
                 position: absolute;
-                left:32px;
-                top: 60px;
+                left:10px;
+                top: 88px;
             }
             .portador {
                 position: absolute;
-                left: 690px;
-                top: 0px;
+                left: 680px;
+                top: 20px;
             }
             .orden-de {
                 position: absolute;
-                left: 205px;
-                top: 0px;
+                left: 200px;
+                top: 12px;
             }
             .cruzado {
 
