@@ -5,6 +5,10 @@
         <title>Formato Cheques</title>
 
         <style media="screen">
+
+            @page {
+                margin-bottom: 0px;
+            }
             body {
                 font-family: sans-serif;
                 font-size: 12px;
@@ -20,15 +24,15 @@
             .contenedor {
                 position: relative;
                 width: 750px;
-                height: 210,5px;
+                height: 200px;
                 padding: 0px;
-                margin-bottom: 100px;
+                margin-bottom: 33px;
                 border: 0px;
             }
             .monto-1 {
                 position:absolute;
-                top: -35px;
-                left: 520px;
+                top: -33px;
+                left: 525px;
             }
             .fecha-1 {
                 position: absolute;
@@ -47,7 +51,7 @@
             }
             .monto-letras {
                 position:absolute;
-                top: 45px;
+                top: 42px;
                 left: 250px;
                 width: 350px;
             }
