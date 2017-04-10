@@ -85,6 +85,10 @@ class Cheque extends Model
             self::$error = true;
             self::$msgErrores[] = 'ERROR Fila #'.$datos['fila'].' columna año';
         }
+        if (!isset($datos['tipo']) || $datos['tipo'] < 1 || $datos['tipo'] > 4) {
+            self::$error = true;
+            self::$msgErrores[] = 'ERROR Fila #'.$datos['fila'].' columna Tipo';
+        }
     }
 
 }

@@ -81,6 +81,9 @@
                 position: absolute;
                 left:5px;
                 top: 140px;
+                width: 150px;
+                height: 50px;
+                overflow: hidden;
             }
             .portador {
                 position: absolute;
