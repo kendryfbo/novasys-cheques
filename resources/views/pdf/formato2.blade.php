@@ -26,13 +26,20 @@
                 width: 750px;
                 height: 200px;
                 padding: 0px;
-                margin-bottom: 33px;
+                margin-bottom: 52px;
+                border: 0px;
+            }
+            .contenedor-2 {
+                position: relative;
+                width: 750px;
+                height: 150px;
+                padding: 0px;
                 border: 0px;
             }
             .monto-1 {
                 position:absolute;
                 top: -33px;
-                left: 525px;
+                left: 527px;
             }
             .fecha-1 {
                 position: absolute;
@@ -81,7 +88,7 @@
             .orden-de {
                 position: absolute;
                 left: 185px;
-                top: 24px;
+                top: 22px;
             }
             .cruzado {
 
@@ -91,18 +98,27 @@
     <body>
 
         @foreach ($cheques as $cheque)
-            <div class="contenedor">
-                <p class="monto-1">{{$cheque['monto']}}</p>
-                <pre class="fecha-1">{{$cheque['dia']}}         {{$cheque['mes']}}           {{$cheque['año']}}</pre>
-                <p class="monto-2">{{$cheque['monto']}}</p>
-                <p class="nombre-1">{{$cheque['nombre']}}</p>
-                <p class="orden-de">--------------</p>
-                <p class="portador">--------------</p>
-                <p class="monto-letras">{{$cheque['montoLetras']}}</p>
-                <p class="fecha-2">{{$cheque['fecha']}}</p>
-                <p class="nombre-2">{{$cheque['nombre']}}</p>
-                <p class="descripcion">{{$cheque['descripcion']}}</p>
-            </div>
+            @if ($loop->last)
+                <div class="contenedor-2">
+            @else
+                <div class="contenedor">
+            @endif
+                    <p class="monto-1">{{$cheque['monto']}}</p>
+                    <pre class="fecha-1">{{$cheque['dia']}}         {{$cheque['mes']}}           {{$cheque['año']}}</pre>
+                    <p class="monto-2">{{$cheque['monto']}}</p>
+                    <p class="nombre-1">{{$cheque['nombre']}}</p>
+                @if ($cheque['tipo'] == 3 ||$cheque['tipo'] == 4 || 1)
+                    <p class="orden-de">--------------</p>
+                @endif
+                @if ($cheque['tipo'] == 1 ||$cheque['tipo'] == 3 ||$cheque['tipo'] == 4 || 1)
+                    <p class="portador">--------------</p>
+                @endif
+                    <p class="monto-letras">{{$cheque['montoLetras']}}</p>
+                    <p class="fecha-2">{{$cheque['fecha']}}</p>
+                    <p class="nombre-2">{{$cheque['nombre']}}</p>
+                    <p class="descripcion">{{$cheque['descripcion']}}</p>
+                </div>
+
         @endforeach
     </body>
 </html>
