@@ -8,6 +8,8 @@
 
             @page {
                 margin-bottom: 0px;
+                margin-right: 0px;
+                margin-top: 42px;
             }
             body {
                 font-family: sans-serif;
@@ -39,7 +41,7 @@
             .monto-1 {
                 position:absolute;
                 top: -33px;
-                left: 527px;
+                left: 530px;
             }
             .fecha-1 {
                 position: absolute;
@@ -83,7 +85,7 @@
             .portador {
                 position: absolute;
                 left: 675px;
-                top: 28px;
+                top: 30px;
             }
             .orden-de {
                 position: absolute;
