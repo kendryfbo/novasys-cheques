@@ -20,6 +20,7 @@ class Cheque extends Model
       // Dar Formato a los Valores de el archivo Excel
       foreach ($lista as $key => $value) {
           $fila += 1;
+          $tipo = $value['tipo'];
           $dia = $value['fecha']->day;
           $mes = $value['fecha']->month;
           $año = $value['fecha']->year;
@@ -32,6 +33,7 @@ class Cheque extends Model
           $lista[$key]['mes'] = $mes;
           $lista[$key]['año'] = $año;
           $lista[$key]['fecha'] = $fecha;
+          $lista[$key]['tipo'] = $tipo;
           $lista[$key]['fila'] = $fila;
 
           self::validarLista($lista[$key]);

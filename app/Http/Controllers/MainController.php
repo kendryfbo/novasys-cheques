@@ -40,7 +40,7 @@ class MainController extends Controller
 
     function downloadDemo() {
         //dd("Descargando demo");
-        return response()->download(public_path('/excel/file.xls'));
+        return response()->download(public_path('/excel/file.xlsx'));
     }
 /*
     function parseExcel() {

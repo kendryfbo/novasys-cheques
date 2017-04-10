@@ -83,15 +83,30 @@
             .portador {
                 position: absolute;
                 left: 675px;
-                top: 36px;
+                top: 28px;
             }
             .orden-de {
                 position: absolute;
                 left: 185px;
-                top: 22px;
+                top: 17px;
             }
             .cruzado {
-
+                content:"";
+                position:absolute;
+                top: 50px;
+                left:150px;
+                border-top:2px solid black;
+                width:220px;
+                transform: rotate(-80deg);
+            }
+            .cruzado-2 {
+                content:"";
+                position:absolute;
+                top: 50px;
+                left:130px;
+                border-top:2px solid black;
+                width:220px;
+                transform: rotate(-80deg);
             }
         </style>
     </head>
@@ -107,16 +122,20 @@
                     <pre class="fecha-1">{{$cheque['dia']}}         {{$cheque['mes']}}           {{$cheque['año']}}</pre>
                     <p class="monto-2">{{$cheque['monto']}}</p>
                     <p class="nombre-1">{{$cheque['nombre']}}</p>
-                @if ($cheque['tipo'] == 3 ||$cheque['tipo'] == 4 || 1)
-                    <p class="orden-de">--------------</p>
+                @if ($cheque['tipo'] == 3 ||$cheque['tipo'] == 4)
+                    <p class="orden-de">_________</p>
                 @endif
-                @if ($cheque['tipo'] == 1 ||$cheque['tipo'] == 3 ||$cheque['tipo'] == 4 || 1)
-                    <p class="portador">--------------</p>
+                @if ($cheque['tipo'] == 1 ||$cheque['tipo'] == 3 ||$cheque['tipo'] == 4)
+                    <p class="portador">_________</p>
                 @endif
                     <p class="monto-letras">{{$cheque['montoLetras']}}</p>
                     <p class="fecha-2">{{$cheque['fecha']}}</p>
                     <p class="nombre-2">{{$cheque['nombre']}}</p>
                     <p class="descripcion">{{$cheque['descripcion']}}</p>
+                @if ($cheque['tipo'] == 4)
+                    <div class="cruzado"></div>
+                    <div class="cruzado-2"></div>
+                @endif
                 </div>
 
         @endforeach
