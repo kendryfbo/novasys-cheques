@@ -5,15 +5,16 @@ namespace App\models;
 use Illuminate\Database\Eloquent\Model;
 use Excel;
 use NumeroALetras;
+
 class Cheque extends Model
 {
     private static $error = false;
     private static $msgErrores;
 
-    static function excelToCheques($file) {
-
-      $archivo = Excel::load($file);
-      $lista = $archivo->get()->first()->toArray();
+    public static function excelToCheques($file)
+    {
+        $archivo = Excel::load($file);
+        $lista = $archivo->get()->first()->toArray();
 
       // contador de filas
       $fila = 0;
@@ -27,7 +28,7 @@ class Cheque extends Model
           $fecha = $value['fecha']->format('d/m/Y');
           $letras = NumeroALetras::convertir($value['monto']);
 
-          $lista[$key]['monto'] = number_format($value['monto'],0,',','.');
+          $lista[$key]['monto'] = number_format($value['monto'], 0, ',', '.');
           $lista[$key]['montoLetras'] = $letras;
           $lista[$key]['dia'] = $dia;
           $lista[$key]['mes'] = $mes;
@@ -39,16 +40,17 @@ class Cheque extends Model
           self::validarLista($lista[$key]);
       }
 
-      if (self::$error) {
-          $lista['error'] = true;
-          $lista['msgErrores'] = self::$msgErrores;
-      }
+        if (self::$error) {
+            $lista['error'] = true;
+            $lista['msgErrores'] = self::$msgErrores;
+        }
       //dd($lista);
       return $lista;
     }
 
     // Valida que el archivo Excel contiene todos los datos Necesarios
-    private static function validarLista($datos) {
+    private static function validarLista($datos)
+    {
         if (!isset($datos['nombre'])) {
             self::$error = true;
             self::$msgErrores[] = 'ERROR Fila #'.$datos['fila'].' = Columna Nombre';
@@ -90,5 +92,4 @@ class Cheque extends Model
             self::$msgErrores[] = 'ERROR Fila #'.$datos['fila'].' columna Tipo';
         }
     }
-
 }

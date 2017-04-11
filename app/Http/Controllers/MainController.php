@@ -9,36 +9,30 @@ use App\models\Cheque;
 
 class MainController extends Controller
 {
-    function index(){
-      return view('index');
+    public function index()
+    {
+        return view('index');
     }
 
-    function chequesPdf(Request $request){
-
-        if ($request->hasFile('file')){
-
+    public function chequesPdf(Request $request)
+    {
+        if ($request->hasFile('file')) {
             $file = $request->file('file');
             $data = Cheque::excelToCheques($file);
 
-            if (isset($data['error'])){
-
-                return view('pdf.errorexcel',['errores' => $data['msgErrores']]);
-
+            if (isset($data['error'])) {
+                return view('pdf.errorexcel', ['errores' => $data['msgErrores']]);
             } else {
-
-                $pdf = PDF::Loadview('pdf.formato2',['cheques' => $data]);
+                $pdf = PDF::Loadview('pdf.formato2', ['cheques' => $data]);
                 return $pdf->stream();
-
             }
-
         } else {
-
-        dd("No has cargado ningun Archivo.");
-
+            dd("No has cargado ningun Archivo.");
         }
     }
 
-    function downloadDemo() {
+    public function downloadDemo()
+    {
         //dd("Descargando demo");
         return response()->download(public_path('/excel/file.xlsx'));
     }
