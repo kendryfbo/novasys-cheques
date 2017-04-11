@@ -41,7 +41,12 @@
             .monto-1 {
                 position:absolute;
                 top: -33px;
-                left: 530px;
+                left: 550px;
+            }
+            .ciudad {
+                position: absolute;
+                left: 520px;
+                top: -5px;
             }
             .fecha-1 {
                 position: absolute;
@@ -55,13 +60,13 @@
             }
             .nombre-1 {
                 position:absolute;
-                left: 250px;
+                left: 260px;
                 top: 25px;
             }
             .monto-letras {
                 position:absolute;
-                top: 42px;
-                left: 250px;
+                top: 50px;
+                left: 260px;
                 width: 350px;
             }
             .fecha-2 {
@@ -88,12 +93,12 @@
             .portador {
                 position: absolute;
                 left: 675px;
-                top: 30px;
+                top: 26px;
             }
             .orden-de {
                 position: absolute;
                 left: 185px;
-                top: 17px;
+                top: 22px;
             }
             .cruzado {
                 content:"";
@@ -123,7 +128,8 @@
             @else
                 <div class="contenedor">
             @endif
-                    <p class="monto-1">{{$cheque['monto']}}</p>
+                    <p class="monto-1">{{$cheque['monto'].'  .-------'}}</p>
+                    <p class="ciudad">STGO</p>
                     <pre class="fecha-1">{{$cheque['dia']}}         {{$cheque['mes']}}           {{$cheque['año']}}</pre>
                     <p class="monto-2">{{$cheque['monto']}}</p>
                     <p class="nombre-1">{{$cheque['nombre']}}</p>
