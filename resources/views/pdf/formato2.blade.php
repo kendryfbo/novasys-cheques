@@ -93,7 +93,7 @@
             .portador {
                 position: absolute;
                 left: 675px;
-                top: 26px;
+                top: 30px;
             }
             .orden-de {
                 position: absolute;
